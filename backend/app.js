@@ -15,10 +15,14 @@ app.use(bodyParser.json());
 //import route
 const flavoursRoute = require('./routes/flavours')
 const crustRoute = require('./routes/crust-type')
+const priceRoute = require('./routes/prices')
+const orderRoute = require('./routes/orders')
 
 //asked to use that particular route
 app.use('/flavours', flavoursRoute);
 app.use('/crust', crustRoute);
+app.use('/price', priceRoute)
+app.use('/order',orderRoute);
 //by the above line we can create a specific route for
 //like app.use('/user, userRoute)
 

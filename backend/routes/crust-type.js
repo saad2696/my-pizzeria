@@ -36,7 +36,7 @@ router.post("/add", async (req, res) => {
   }
 });
 
-//delete flavours
+//delete crust
 router.delete("/delete/:crustId", async (req, res) => {
   try {
     const removedCrust = await Crust.deleteOne({ crustId: req.params.crustId });
